@@ -10,7 +10,7 @@ class User
     }
     public function printUsername()
     {
-        echo $this->username;
+        echo "$this->username </br>";
     }
 
     public function printStatus()
