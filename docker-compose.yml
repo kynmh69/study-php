@@ -7,11 +7,3 @@ services:
       - ./web:/var/www/html
     ports:
       - 8080:80
-    depends_on:
-      - mysql
-  mysql:
-    image: mysql:oracle
-    volumes:
-      - ./mysql:/var/www/mysql
-    environment:
-      - MYSQL_ROOT_PASSWORD=secret
